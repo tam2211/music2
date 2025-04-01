@@ -9,9 +9,9 @@
 <style>
     body {
         text-align: center;
-        /* background: linear-gradient(45deg,black,white,blue,cyan); */
-        background-color: rgb(255, 230, 197);
-        color: rgb(114, 100, 243);
+        color: rgb(114, 100, 243); 
+        background: linear-gradient(rgb(196, 10, 196),rgb(70, 70, 255))
+
 
     }
 
@@ -45,7 +45,7 @@
 
     .playlist li {
         padding: 12px;
-        background: rgb(131, 107, 107);
+        background: rgb(107, 127, 131);
         margin: 8px 0;
         cursor: pointer;
         border-radius: 5px;
@@ -64,9 +64,9 @@
 <body>
 
     <div class="container">
-        <h1>Album US-UK</h1>
+        <h1>Album J-POP</h1>
 
-        <img src="images\birdsofafeather.png" alt="Bia album" />
+        <img id='anhbia' src="images\birdsofafeather.png" alt="Bia album" />
         <br />
 
         <audio id="player" controls>
@@ -78,12 +78,50 @@
         <h2>Playlist</h2>
 
         <ul class="playlist">
-            <li onclick="document.getElementById('player').src='audios/usseewa.mp3'">
+            <li onclick="
+		anhbia.src = 'images/sakurabiyori.png';
+		player.src = 'audios/sakurabiyori.mp3';
+		player.play();
+			">
+                Sakura Biyori and Time Machine
+            </li>
+
+            <li onclick="
+		anhbia.src = 'images/birdsofafeather.png';
+		player.src = 'audios/birdsofafeather.mp3';
+		player.play();
+			">
+                BIRDS OF A FEATHER
+            </li>
+
+            <li onclick="
+        anhbia.src = 'images/usseewa.png';
+        player.src = 'audios/usseewa.mp3';
+        player.play();
+        ">
+                Usseewa
+            </li>
+
+            <li onclick="
+        anhbia.src = 'images/apothecarydiary.png';
+        player.src = 'audios/apothecarydiary.mp3';
+        player.play();
+        ">
+                Apothecary Diary
+            </li>
+
+            <li onclick="
+        anhbia.src = 'images/gunjou.png';
+        player.src = 'audios/gunjou.mp3';
+        player.play();
+        ">
+                Gunjou(Ultramarine)
+            </li>
+            <!-- <li onclick="document.getElementById('player').src='audios/usseewa.mp3'">
                 Usseewa</li>
 
             <li onclick="document.getElementById('player').src ='audios/birdsofafeather.mp3';player.play()">
-                BIRDS OF A FEATHER</li>
-
+                BIRDS OF A FEATHER</li> -->
 
         </ul>
 
